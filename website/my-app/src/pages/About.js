@@ -1,4 +1,3 @@
-import { Card, CardContent, Grid, Paper, Typography } from "@material-ui/core";
 import Logo from '../images/github-logo.png';
 
 export default function About() {

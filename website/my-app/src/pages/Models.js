@@ -10,8 +10,6 @@ import elastic_net from '../images/elastic_net_regression.png';
 export default function Models() {
     return (
     <div>
-        {/* <h1>Models</h1> */}
-
         {/* DATA WRANGLING SECTION */}
         <h1>Data Wrangling</h1>
         <div class="container-model">
@@ -67,15 +65,13 @@ export default function Models() {
             </div>
 
             <div class="text-col">
-                {/* <h2>Figure 1.2 Quarterly Model 1 Summary - This figure shows the summary 
-                    of quarterly model 1</h2> */}
                 <h2>Description of Figure 1.2 and Figure 1.3</h2>
 
                 <p className="models-p">
                 Once the quarterly data was collected and compiled into a usable dataset, 
                 modeling can begin. The first model that we will look at uses all the 
                 variables that are in our dataset. The formula can be seen at the top of 
-                Figure 7.1.6 above. This summary also gives us coefficients which tell us 
+                Figure 1.2 above. This summary also gives us coefficients which tell us 
                 how to create the line that the model creates along with the intercept. 
                 For example we can say that for every increase in GDP along the x-axis, 
                 cpi will decrease by -1.853e-01 and so on for the other variables. The 
@@ -99,7 +95,7 @@ export default function Models() {
                 gave us a high R-squared value, but when we looked at the residual 
                 standard error (231.3, see Figure 7.1.3) it is much higher than this 
                 model (0.4827). This shows that this model is not overfitted, unlike the 
-                yearly model. We can see below in Figure 7.1.7 when we test our model on 
+                yearly model. We can see below in Figure 1.3 when we test our model on 
                 data that it has never seen before it does seem to get the general trend 
                 of the data, although it does seem to not account for all the variance, 
                 which is why for this model the adjusted R-squared value is in the 80% 
@@ -131,7 +127,7 @@ export default function Models() {
                 <p className="models-p">
                 This second model we wanted to see what would happen if we just used the 
                 highly correlated variable to predict GDP. The formula can be seen at the 
-                top of Figure 7.1.8 above. This summary also gives us coefficients which 
+                top of Figure 1.4 above. This summary also gives us coefficients which 
                 tell us how to create the line that the model creates along with the 
                 intercept. For example we can say that for every increase in GDP along the 
                 x-axis, cpi will decrease by -0.39374 and so on for the other variables. 
@@ -155,7 +151,7 @@ export default function Models() {
                 R-squared value is extremely low. The details of this model honestly is 
                 not the interesting part, it's the fact that given the model is so bad, 
                 how did it predict so well, which will be discussed below. Looking at 
-                Figure 7.1.9 below we can see that the model does seem to get some of the 
+                Figure 1.5 below we can see that the model does seem to get some of the 
                 variance but it hardly performs and it is very noticeable to the eye.
 
                 </p>
@@ -184,8 +180,8 @@ export default function Models() {
                 having a high R-squared and a low residual standard error. The variables 
                 that were removed were the highly correlated variables 
                 (darker boxes in Figure 7.1.1), or the variables that we used in quarterly 
-                model 2 (Figure 7.1.8). If we compare this model to quarterly model 1 
-                (Figure 7.1.6) we see that they are very similar. The residual standard 
+                model 2 (Figure 7.4). If we compare this model to quarterly model 1 
+                (Figure 7.2) we see that they are very similar. The residual standard 
                 error is very low and a very similar value to that of this model. This 
                 means that like the first model, this one should predict value well. The 
                 R-squared value is also almost the same, meaning that we account for 
@@ -193,7 +189,7 @@ export default function Models() {
                 impressive since we went from 8 variables to 5 variables and are still 
                 getting models roughly the same. <br></br><br></br>
 
-                When we look at what the model predicts in Figure 7.1.11, we can see 
+                When we look at what the model predicts in Figure 1.7, we can see 
                 visually that the model does seem to get the general trends like what we 
                 see in quarterly model 1. This model may even look better to the eye. We 
                 will compare the quarter 1, 2 of 2022 predictions below.
@@ -228,7 +224,7 @@ export default function Models() {
                 modeling was split into training and testing, that way when we test, the 
                 model has never seen these values before. <br></br><br></br>
 
-	            When looking at the graph below (Figure 7.1.13) we can see that the 
+	            When looking at the graph below (Figure 1.8) we can see that the 
                 elastic-net model did very well in showing the variance in the data. 
                 When we look at the graph, when the GDP is low the model predicts low and 
                 when the GDP is high the model accurately predicts a high GDP. This can be 
@@ -236,9 +232,7 @@ export default function Models() {
                 this model do compared to our other models and to what others might predict.
                 </p>
             </div>
-        </div>
-
-    
+        </div>   
 
     </div>
     )
